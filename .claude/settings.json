@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Dieze/Downloads/118281-V11/**)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Dieze\\Downloads\\118281-V11"
+    ]
+  }
+}
