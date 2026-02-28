@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies | Diego Ramírez</title>
+  <meta name="description" content="The human side of Diego Ramírez — hobbies, interests, and life outside the academy.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">diegoramirez</a>
+  <ul class="nav-links">
+    <li><a href="index.html">profile</a></li>
+    <li><a href="research.html">research</a></li>
+    <li><a href="teaching.html">teaching</a></li>
+    <li><a href="hobbies.html" class="active">hobbies</a></li>
+    <li><a href="amelia.html">amelia</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- PHOTO BANNER — Boston winter -->
+  <div class="photo-section">
+    <img
+      src="WhatsApp%20Image%202026-02-22%20at%2019.07.33.jpeg"
+      alt="Diego surviving a Boston blizzard"
+      class="photo-full"
+    >
+    <div class="photo-caption">📍 Boston, MA — surviving the polar vortex, one snowflake at a time. Colombia did not prepare me for this.</div>
+  </div>
+
+  <!-- TERMINAL -->
+  <div class="terminal">
+    <div class="terminal-bar">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="terminal-filename">hobbies.json</span>
+    </div>
+    <div class="terminal-body">
+      <div><span class="prompt">$</span> <span class="cmd">python3 -c "import json; print(json.load(open('me.json')))"</span></div>
+      <span class="out">{</span>
+      <span class="out">&nbsp;&nbsp;<span class="out-arr">"coffee"</span>: <span class="ac-yellow">"obsessed (Colombian, obviously)"</span>,</span>
+      <span class="out">&nbsp;&nbsp;<span class="out-arr">"data_for_fun"</span>: <span class="ac-green">true</span>,</span>
+      <span class="out">&nbsp;&nbsp;<span class="out-arr">"reading"</span>: [<span class="ac-yellow">"sci-fi"</span>, <span class="ac-yellow">"essays"</span>, <span class="ac-yellow">"economics"</span>],</span>
+      <span class="out">&nbsp;&nbsp;<span class="out-arr">"music"</span>: [<span class="ac-yellow">"salsa"</span>, <span class="ac-yellow">"cumbia"</span>, <span class="ac-yellow">"electronic"</span>],</span>
+      <span class="out">&nbsp;&nbsp;<span class="out-arr">"boston_winter_opinion"</span>: <span class="ac-yellow">"it builds character (allegedly)"</span>,</span>
+      <span class="out">&nbsp;&nbsp;<span class="out-arr">"bogota_vs_boston"</span>: <span class="ac-yellow">"both have great coffee, only one has snow"</span></span>
+      <span class="out">}</span>
+      <div class="mt-half"><span class="prompt">$</span> <span class="cursor"></span></div>
+    </div>
+  </div>
+
+  <!-- HOBBIES GRID -->
+  <div class="section-h">
+    <h2>interests</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="hobby-grid">
+
+    <div class="hobby-card">
+      <span class="hobby-icon">☕</span>
+      <h3>// coffee</h3>
+      <p>
+        Colombian by birth, PhD student by choice — both require industrial quantities of coffee.
+        From a <em>tinto</em> on a Bogotá street to a cortado in a Boston café, coffee is ritual, fuel,
+        and the only reason 8am regressions are survivable.
+      </p>
+    </div>
+
+    <div class="hobby-card">
+      <span class="hobby-icon">📊</span>
+      <h3>// data_for_fun</h3>
+      <p>
+        When I'm not running regressions for work, I'm running them for fun. Exploratory data analysis,
+        data visualization in Python and R, and endlessly asking "what does this distribution
+        <em>actually</em> tell us?" as a hobby. The IV estimates never lie. (They often do.)
+      </p>
+    </div>
+
+    <div class="hobby-card">
+      <span class="hobby-icon">📚</span>
+      <h3>// reading</h3>
+      <p>
+        Sci-fi, essays, and economics books that were supposed to be beach reads.
+        Currently alternating between academic papers and speculative fiction —
+        both involve alternate realities with uncertain equilibria and imperfect information.
+      </p>
+    </div>
+
+    <div class="hobby-card">
+      <span class="hobby-icon">🎵</span>
+      <h3>// music</h3>
+      <p>
+        Salsa and cumbia for the soul, lo-fi hip-hop for writing sessions,
+        and something chaotic when the deadline is truly dire.
+        Music taste: firmly Colombian with a PhD student overlay.
+      </p>
+    </div>
+
+    <div class="hobby-card">
+      <span class="hobby-icon">🗺️</span>
+      <h3>// exploring</h3>
+      <p>
+        From Bogotá to Boston, I love wandering new neighborhoods, finding the best empanada within
+        walking distance of campus, and navigating the MBTA with only mild anxiety.
+        Every city is a natural experiment.
+      </p>
+    </div>
+
+    <div class="hobby-card">
+      <span class="hobby-icon">🧩</span>
+      <h3>// strategy_games</h3>
+      <p>
+        Board games, chess, and any game that rewards thinking three moves ahead.
+        Studying behavioral economics means I can now identify exactly which cognitive biases
+        cause me to lose at Catan — which doesn't make me win more, but is academically interesting.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- FUN FACTS TERMINAL -->
+  <div class="section-h">
+    <h2>fun_facts.py</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="terminal">
+    <div class="terminal-bar">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="terminal-filename">fun_facts.py</span>
+    </div>
+    <div class="terminal-body">
+      <span class="comment"># things about Diego that didn't fit in the CV</span>
+      <br>
+      <span class="out">fun_facts = [</span>
+      <span class="out">&nbsp;&nbsp;<span class="ac-yellow">"Has survived both Colombian summers and Boston blizzards"</span>,</span>
+      <span class="out">&nbsp;&nbsp;<span class="ac-yellow">"Once tracked people's eyes while they made risky decisions (for science)"</span>,</span>
+      <span class="out">&nbsp;&nbsp;<span class="ac-yellow">"Genuinely gets excited about a well-specified instrumental variable"</span>,</span>
+      <span class="out">&nbsp;&nbsp;<span class="ac-yellow">"Can explain the Ellsberg Paradox at a party and somehow still gets invited back"</span>,</span>
+      <span class="out">&nbsp;&nbsp;<span class="ac-yellow">"Still refers to the MBTA as 'the T' despite being confused by it daily"</span>,</span>
+      <span class="out">&nbsp;&nbsp;<span class="ac-yellow">"Has a bibliography manager more organized than their desk"</span>,</span>
+      <span class="out">]</span>
+      <br>
+      <span class="out">print(random.choice(fun_facts))</span>
+      <div class="mt-half"><span class="prompt">$</span> <span class="cursor"></span></div>
+    </div>
+  </div>
+
+  <!-- PHOTO GALLERY -->
+  <div class="section-h">
+    <h2>moments</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="hobby-gallery">
+
+    <div class="hobby-photo-wrap tall">
+      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(10).jpeg" alt="Art installation" class="hobby-photo-img">
+      <div class="hobby-photo-cap">somewhere between a museum and a fever dream</div>
+    </div>
+
+    <div class="hobby-photo-wrap">
+      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(1).jpeg" alt="Airplane view of coastal city" class="hobby-photo-img">
+      <div class="hobby-photo-cap">window seat always</div>
+    </div>
+
+    <div class="hobby-photo-wrap">
+      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51.jpeg" alt="Aerial view of ships at sunset" class="hobby-photo-img">
+      <div class="hobby-photo-cap">ships at dusk — a natural panel dataset</div>
+    </div>
+
+    <div class="hobby-photo-wrap">
+      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(8).jpeg" alt="Diego on rocky New England shore" class="hobby-photo-img">
+      <div class="hobby-photo-cap">exploring the New England coastline</div>
+    </div>
+
+    <div class="hobby-photo-wrap">
+      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(9).jpeg" alt="Lighthouse on rocky pier" class="hobby-photo-img">
+      <div class="hobby-photo-cap">a lighthouse is just a tall regression discontinuity</div>
+    </div>
+
+    <div class="hobby-photo-wrap">
+      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(7).jpeg" alt="Butterfly museum exhibit" class="hobby-photo-img">
+      <div class="hobby-photo-cap">butterfly exhibit — peak nerd activity</div>
+    </div>
+
+    <div class="hobby-photo-wrap wide">
+      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(6).jpeg" alt="The Divine nightclub" class="hobby-photo-img">
+      <div class="hobby-photo-cap">The Divine — where the Stata can wait</div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <span>Diego Sebastián Ramírez Ramírez</span> &nbsp;·&nbsp; Ph.D. Candidate in Public Policy &nbsp;·&nbsp; Northeastern University &nbsp;·&nbsp; Boston, MA
+</footer>
+
+</body>
+</html>

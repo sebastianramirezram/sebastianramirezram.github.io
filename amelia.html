@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amelia | Diego Ramírez</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Amelia-specific overrides — warmer purple palette */
+    .nav-links a.active {
+      color: var(--purple);
+      border-color: rgba(210, 168, 255, 0.35);
+      background: rgba(210, 168, 255, 0.08);
+    }
+    .nav-links a:hover {
+      color: var(--purple);
+      border-color: rgba(210, 168, 255, 0.35);
+      background: rgba(210, 168, 255, 0.08);
+    }
+    .timeline-item::before { background: var(--purple); box-shadow: 0 0 0 2px rgba(210, 168, 255, 0.3); }
+    .timeline::before { background: linear-gradient(to bottom, var(--purple), transparent); }
+    .amelia-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.8rem;
+      margin-top: 0.5rem;
+    }
+    .amelia-photo-wrap {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(210, 168, 255, 0.25);
+      aspect-ratio: 3/4;
+    }
+    .amelia-photo-wrap:hover .amelia-photo-caption { opacity: 1; }
+    .amelia-photo-img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .amelia-photo-wrap:hover .amelia-photo-img { transform: scale(1.03); }
+    .amelia-photo-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(13,17,23,0.85));
+      padding: 1.5rem 0.8rem 0.7rem;
+      font-family: var(--font-mono); font-size: 0.72rem;
+      color: var(--purple);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    @media (max-width: 600px) { .amelia-gallery { grid-template-columns: 1fr 1fr; } }
+    .heart-divider {
+      text-align: center;
+      font-size: 1.2rem;
+      color: rgba(210, 168, 255, 0.5);
+      letter-spacing: 0.5rem;
+      margin: 2rem 0;
+    }
+    /* Floating stars decoration */
+    .stars {
+      position: absolute;
+      top: 0; right: 0;
+      font-size: 1rem;
+      color: rgba(210, 168, 255, 0.15);
+      pointer-events: none;
+      line-height: 1.6;
+      text-align: right;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">diegoramirez</a>
+  <ul class="nav-links">
+    <li><a href="index.html">profile</a></li>
+    <li><a href="research.html">research</a></li>
+    <li><a href="teaching.html">teaching</a></li>
+    <li><a href="hobbies.html">hobbies</a></li>
+    <li><a href="amelia.html" class="active">amelia</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- AMELIA HERO -->
+  <div class="amelia-hero">
+    <div class="stars" aria-hidden="true">✦ ✧ ✦<br>✧ ✦ ✧<br>✦ ✧ ✦</div>
+
+    <div style="font-size: 4rem; margin-bottom: 1rem; line-height: 1;">🐾</div>
+
+    <h1 class="amelia-name">Amelia</h1>
+    <p class="amelia-subtitle">Chief of Naps &middot; Professional Supervisor &middot; Emotional Support Animal</p>
+
+    <div class="amelia-facts-grid">
+      <div class="fact-box">
+        <span class="fact-label">// species</span>
+        <span class="fact-value">Felis catus</span>
+      </div>
+      <div class="fact-box">
+        <span class="fact-label">// role</span>
+        <span class="fact-value">PhD moral support</span>
+      </div>
+      <div class="fact-box">
+        <span class="fact-label">// specialty</span>
+        <span class="fact-value">sitting on papers</span>
+      </div>
+      <div class="fact-box">
+        <span class="fact-label">// research hours</span>
+        <span class="fact-value">0 (supervised)</span>
+      </div>
+      <div class="fact-box">
+        <span class="fact-label">// publications</span>
+        <span class="fact-value">0 (cited in vibes)</span>
+      </div>
+      <div class="fact-box">
+        <span class="fact-label">// location</span>
+        <span class="fact-value">wherever it's warm</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="heart-divider" aria-hidden="true">♥ ♥ ♥ ♥ ♥</div>
+
+  <!-- ABOUT AMELIA -->
+  <div class="section-h">
+    <h2>about_amelia</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="terminal" style="border-color: rgba(210, 168, 255, 0.3);">
+    <div class="terminal-bar">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot" style="background: var(--purple);"></span>
+      <span class="terminal-filename">amelia.sh</span>
+    </div>
+    <div class="terminal-body">
+      <div><span class="prompt" style="color: var(--purple);">$</span> <span class="cmd">cat amelia_bio.txt</span></div>
+      <span class="out">Meet Amelia — the real reason any of this work gets done.</span>
+      <span class="out">She provides critical emotional support during econometrics deadlines,</span>
+      <span class="out">unsolicited opinions on research proposals (mostly meows),</span>
+      <span class="out">and an uncanny ability to sit exactly on the keyboard when it matters most.</span>
+      <div class="mt-1"><span class="prompt" style="color: var(--purple);">$</span> <span class="cmd">cat skills.txt</span></div>
+      <span class="out"><span style="color: var(--purple);">→</span> Napping on Stata do-files (advanced)</span>
+      <span class="out"><span style="color: var(--purple);">→</span> Peer review via pawing (intermediate)</span>
+      <span class="out"><span style="color: var(--purple);">→</span> 3am productivity disruption (expert)</span>
+      <span class="out"><span style="color: var(--purple);">→</span> Making any zoom call better (innate)</span>
+      <div class="mt-half"><span class="prompt" style="color: var(--purple);">$</span> <span class="cursor" style="background: var(--purple);"></span></div>
+    </div>
+  </div>
+
+  <!-- AMELIA'S SECTIONS -->
+  <div class="amelia-section">
+    <h3>research_contributions</h3>
+    <p>
+      While Amelia's name does not appear on any working paper (yet), her contributions to the research process
+      are immeasurable. She has reviewed multiple drafts of literature reviews through the act of sitting on them,
+      provided warm encouragement during late-night writing sessions, and once accidentally deleted a do-file that
+      probably needed to be rewritten anyway.
+    </p>
+  </div>
+
+  <div class="amelia-section">
+    <h3>teaching_philosophy</h3>
+    <p>
+      Amelia believes in learning through observation and strategic napping. Her approach to education is
+      entirely Socratic: she asks no questions, provides no answers, and evaluates all outcomes with equal
+      indifference. Students and professors alike are assessed on the same metric — their ability to provide
+      adequate chin scratches.
+    </p>
+  </div>
+
+  <div class="amelia-section">
+    <h3>boston_survival_guide</h3>
+    <p>
+      Unlike certain PhD students who still haven't fully adapted to Boston winters,
+      Amelia has mastered the art of indoor living. Her strategy: find the warmest spot in the apartment,
+      claim it permanently, and regard all attempts to reclaim it with dignified contempt.
+      This is, arguably, the optimal behavioral response to the Northeast climate.
+    </p>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="section-h">
+    <h2>gallery</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="amelia-gallery">
+    <div class="amelia-photo-wrap">
+      <img
+        src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(4).jpeg"
+        alt="Amelia supervising Stata"
+        class="amelia-photo-img"
+      >
+      <div class="amelia-photo-caption">peer-reviewing regression output</div>
+    </div>
+    <div class="amelia-photo-wrap">
+      <img
+        src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(5).jpeg"
+        alt="Amelia peeking at the screen"
+        class="amelia-photo-img"
+      >
+      <div class="amelia-photo-caption">monitoring the do-file situation</div>
+    </div>
+    <div class="amelia-photo-wrap">
+      <img
+        src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(11).jpeg"
+        alt="Amelia sunbathing"
+        class="amelia-photo-img"
+      >
+      <div class="amelia-photo-caption">optimal resource allocation</div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <span>Made with love for Amelia</span> &nbsp;·&nbsp; Diego Sebastián Ramírez Ramírez &nbsp;·&nbsp; Northeastern University
+</footer>
+
+</body>
+</html>
