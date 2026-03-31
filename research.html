@@ -43,7 +43,7 @@
       <span class="out"><span class="out-arr">→</span> Gender Economics</span>
       <span class="out"><span class="out-arr">→</span> Economics of Education</span>
       <div class="mt-1"><span class="prompt">$</span> <span class="cmd">ls working_papers/ | wc -l</span></div>
-      <span class="out">2 papers</span>
+      <span class="out">4 papers</span>
       <div class="mt-half"><span class="prompt">$</span> <span class="cursor"></span></div>
     </div>
   </div>
@@ -135,6 +135,99 @@
     <div class="paper-git">
       <div><span class="prompt">$</span> <span class="cmd">git log --oneline youth_employment_crime.tex</span></div>
       <span class="out" style="color: var(--yellow);">in progress &nbsp;·&nbsp; analysis ongoing &nbsp;·&nbsp; Northeastern University 2025</span>
+    </div>
+  </div>
+
+  <div class="paper-card paper-card-featured">
+    <div class="card-meta">
+      <span class="tag tag-purple">Work in Progress</span>
+      <span class="tag tag-green">2026</span>
+      <span class="tag tag-blue">Gender Econ</span>
+      <span class="tag tag-blue">Climate</span>
+      <span class="tag tag-blue">Colombia</span>
+    </div>
+
+    <p class="paper-title">Climate Shocks and Gender-Based Violence in Colombia</p>
+    <p class="paper-authors">Ramírez Ramírez, D. S.</p>
+    <p class="paper-venue">Northeastern University &nbsp;·&nbsp; Working paper &nbsp;·&nbsp; March 2026</p>
+
+    <p class="paper-abstract">
+      This paper estimates the causal effect of climate shocks on gender-based violence in Colombia using a municipality-month panel for 2015–2022. Combining ERA5 climate anomalies with administrative records from the Policía Nacional and Instituto Nacional de Medicina Legal, the analysis uses two-way fixed effects to study how temperature and precipitation shocks affect domestic violence reporting, sexual crimes, and homicides.
+    </p>
+
+    <div class="paper-divider"></div>
+
+    <div class="paper-stats">
+      <div class="paper-stat">
+        <span class="stat-label">Panel</span>
+        <span class="stat-value">2015-2022</span>
+      </div>
+      <div class="paper-stat">
+        <span class="stat-label">Units</span>
+        <span class="stat-value">1,124 Munis.</span>
+      </div>
+      <div class="paper-stat">
+        <span class="stat-label">Obs.</span>
+        <span class="stat-value">107,904</span>
+      </div>
+      <div class="paper-stat">
+        <span class="stat-label">Design</span>
+        <span class="stat-value">TWFE Panel</span>
+      </div>
+      <div class="paper-stat">
+        <span class="stat-label">Climate</span>
+        <span class="stat-value">ERA5</span>
+      </div>
+      <div class="paper-stat">
+        <span class="stat-label">Setting</span>
+        <span class="stat-value">Colombia</span>
+      </div>
+    </div>
+
+    <div class="paper-findings">
+      <span class="paper-findings-label">key_findings</span>
+      <ul>
+        <li>Higher temperature anomalies significantly increase homicides, with a one-standard-deviation increase raising homicides by 0.039 per municipality-month.</li>
+        <li>Precipitation surpluses reduce homicides, while heavy-rain days increase police-reported domestic violence complaints.</li>
+        <li>No significant climate effect appears in INML medico-legal domestic violence records, suggesting reporting access and mobility channels matter.</li>
+      </ul>
+    </div>
+
+    <div class="paper-git">
+      <div><span class="prompt">$</span> <span class="cmd">git log --oneline gender_and_climate.tex</span></div>
+      <span class="out" style="color: var(--yellow);">in progress &nbsp;·&nbsp; municipality-month panel complete &nbsp;·&nbsp; draft updated March 2026</span>
+    </div>
+  </div>
+
+  <div class="paper-card paper-card-featured">
+    <div class="card-meta">
+      <span class="tag tag-purple">Work in Progress</span>
+      <span class="tag tag-green">2026</span>
+      <span class="tag tag-blue">Labor Economics</span>
+      <span class="tag tag-blue">Performance</span>
+      <span class="tag tag-blue">Education</span>
+    </div>
+
+    <p class="paper-title">Paying Teachers More, Improving Students: Evidence from Colombia's Salary Reforms</p>
+    <p class="paper-authors">Ramírez R., D. S.</p>
+    <p class="paper-venue">Northeastern University &nbsp;·&nbsp; First draft &nbsp;·&nbsp; March 2026</p>
+
+    <p class="paper-abstract">
+      This project studies Colombia's 2022–2024 teacher salary reforms and their effects on student achievement. The paper reframes the design as a shift-share Difference-in-Differences approach, where school-level exposure depends on pre-reform teacher composition interacted with policy-driven changes in the national salary grid.
+    </p>
+
+    <div class="paper-findings">
+      <span class="paper-findings-label">project_focus</span>
+      <ul>
+        <li>The relevant identifying variation comes from predetermined school exposure to reform-induced salary changes, not idiosyncratic wage variation.</li>
+        <li>The 2024 reform appears to provide the most informative non-uniform treatment intensity across schools.</li>
+        <li>Current work focuses on rebuilding the replication pipeline and validating the exposure-based research design.</li>
+      </ul>
+    </div>
+
+    <div class="paper-git">
+      <div><span class="prompt">$</span> <span class="cmd">git log --oneline wages_increasing_performance.tex</span></div>
+      <span class="out" style="color: var(--yellow);">in progress &nbsp;·&nbsp; design revised to shift-share DiD &nbsp;·&nbsp; replication pending</span>
     </div>
   </div>
 
