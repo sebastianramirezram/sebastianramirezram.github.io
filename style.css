@@ -105,6 +105,27 @@ nav {
   background: rgba(63, 185, 80, 0.08);
 }
 
+.nav-links a.nav-secret {
+  color: var(--text-dim);
+  font-size: 0.68rem;
+  padding: 4px 7px;
+  opacity: 0.55;
+  border-color: transparent;
+  background: transparent;
+}
+
+.nav-links a.nav-secret::before {
+  content: '';
+}
+
+.nav-links a.nav-secret:hover,
+.nav-links a.nav-secret.active {
+  color: var(--purple);
+  opacity: 0.85;
+  border-color: rgba(210, 168, 255, 0.25);
+  background: rgba(210, 168, 255, 0.06);
+}
+
 /* ── MAIN ── */
 main {
   position: relative;
