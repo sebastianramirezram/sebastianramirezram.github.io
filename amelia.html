@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amelia | Diego Ramírez</title>
+  <meta name="description" content="Amelia — the real PhD supervisor. Chief of Naps, Professional Keyboard Sitter, Emotional Support Animal.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="Amelia | Diego Ramírez">
+  <meta property="og:description" content="Meet Amelia — PhD moral support, professional paper-sitter, and the real reason any of this work gets done.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://diegoramirezr.github.io/amelia.html">
+  <meta property="og:image" content="https://diegoramirezr.github.io/amelia-1.jpg">
   <link rel="stylesheet" href="style.css">
   <style>
     /* Amelia-specific overrides — warmer purple palette */
@@ -80,7 +87,7 @@
     <li><a href="research.html">research</a></li>
     <li><a href="teaching.html">teaching</a></li>
     <li><a href="hobbies.html">hobbies</a></li>
-    <li><a href="amelia.html" class="active">amelia</a></li>
+    <li><a href="amelia.html" class="active">🐾 amelia</a></li>
   </ul>
 </nav>
 
@@ -193,7 +200,7 @@
   <div class="amelia-gallery">
     <div class="amelia-photo-wrap">
       <img
-        src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(4).jpeg"
+        src="amelia-1.jpg"
         alt="Amelia supervising Stata"
         class="amelia-photo-img"
       >
@@ -201,7 +208,7 @@
     </div>
     <div class="amelia-photo-wrap">
       <img
-        src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(5).jpeg"
+        src="amelia-2.jpg"
         alt="Amelia peeking at the screen"
         class="amelia-photo-img"
       >
@@ -209,7 +216,7 @@
     </div>
     <div class="amelia-photo-wrap">
       <img
-        src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(11).jpeg"
+        src="amelia-3.jpg"
         alt="Amelia sunbathing"
         class="amelia-photo-img"
       >
@@ -223,5 +230,21 @@
   <span>Made with love for Amelia</span> &nbsp;·&nbsp; Diego Sebastián Ramírez Ramírez &nbsp;·&nbsp; Northeastern University
 </footer>
 
+
+<script>
+  fetch('https://gyzdyseccvxugfujalqs.supabase.co/rest/v1/page_views', {
+    method: 'POST',
+    headers: {
+      'apikey': 'sb_publishable_craMqAF_LuUVH7ZFzMwBlA_0O2LuQ2U',
+      'Authorization': 'Bearer sb_publishable_craMqAF_LuUVH7ZFzMwBlA_0O2LuQ2U',
+      'Content-Type': 'application/json',
+      'Prefer': 'return=minimal'
+    },
+    body: JSON.stringify({
+      page: window.location.pathname || '/amelia.html',
+      referrer: document.referrer || null
+    })
+  });
+</script>
 </body>
 </html>

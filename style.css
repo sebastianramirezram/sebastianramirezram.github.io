@@ -451,6 +451,24 @@ main {
   cursor: default;
 }
 
+.btn-cv {
+  background: transparent;
+  color: var(--yellow);
+  border: 1px solid rgba(227,179,65,0.4);
+}
+.btn-cv:hover { background: rgba(227,179,65,0.1); border-color: var(--yellow); }
+
+.paper-git {
+  margin-top: 1.1rem;
+  padding: 0.6rem 0.9rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.9;
+}
+
 .paper-venue {
   font-family: var(--font-mono);
   font-size: 0.76rem;

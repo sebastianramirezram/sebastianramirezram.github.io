@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research | Diego Ramírez</title>
   <meta name="description" content="Research by Diego Ramírez — working papers, research experience, and conference presentations in behavioral and development economics.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="Research | Diego Ramírez">
+  <meta property="og:description" content="Working papers and research experience in behavioral and development economics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://diegoramirezr.github.io/research.html">
+  <meta property="og:image" content="https://diegoramirezr.github.io/headshot.jpg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +22,7 @@
     <li><a href="research.html" class="active">research</a></li>
     <li><a href="teaching.html">teaching</a></li>
     <li><a href="hobbies.html">hobbies</a></li>
-    <li><a href="amelia.html">amelia</a></li>
+    <li><a href="amelia.html">🐾 amelia</a></li>
   </ul>
 </nav>
 
@@ -103,9 +109,9 @@
       </ul>
     </div>
 
-    <div class="paper-links">
-      <span class="btn btn-ghost">Paper — Coming Soon</span>
-      <span class="btn btn-ghost">Slides — Coming Soon</span>
+    <div class="paper-git">
+      <div><span class="prompt">$</span> <span class="cmd">git log --oneline tired_and_blind.tex</span></div>
+      <span class="out" style="color: var(--yellow);">modified &nbsp;·&nbsp; draft ~80% complete &nbsp;·&nbsp; targeting J. of Development Economics</span>
     </div>
   </div>
 
@@ -126,8 +132,9 @@
       Investigates the causal long-run effects of summer youth employment programs on violent crime outcomes. The paper leverages quasi-experimental variation to estimate whether short-term employment opportunities during adolescence produce durable reductions in violent crime, contributing evidence to the intersection of labor market policy and public safety.
     </p>
 
-    <div class="paper-links">
-      <span class="btn btn-ghost">Paper — Coming Soon</span>
+    <div class="paper-git">
+      <div><span class="prompt">$</span> <span class="cmd">git log --oneline youth_employment_crime.tex</span></div>
+      <span class="out" style="color: var(--yellow);">in progress &nbsp;·&nbsp; analysis ongoing &nbsp;·&nbsp; Northeastern University 2025</span>
     </div>
   </div>
 
@@ -318,5 +325,21 @@
   <span>Diego Sebastián Ramírez Ramírez</span> &nbsp;·&nbsp; Ph.D. Candidate in Public Policy &nbsp;·&nbsp; Northeastern University &nbsp;·&nbsp; Boston, MA
 </footer>
 
+
+<script>
+  fetch('https://gyzdyseccvxugfujalqs.supabase.co/rest/v1/page_views', {
+    method: 'POST',
+    headers: {
+      'apikey': 'sb_publishable_craMqAF_LuUVH7ZFzMwBlA_0O2LuQ2U',
+      'Authorization': 'Bearer sb_publishable_craMqAF_LuUVH7ZFzMwBlA_0O2LuQ2U',
+      'Content-Type': 'application/json',
+      'Prefer': 'return=minimal'
+    },
+    body: JSON.stringify({
+      page: window.location.pathname || '/research.html',
+      referrer: document.referrer || null
+    })
+  });
+</script>
 </body>
 </html>

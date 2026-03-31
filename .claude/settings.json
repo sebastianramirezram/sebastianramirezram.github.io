@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Read(//c/Users/Dieze/Downloads/118281-V11/**)"
+      "Read(//c/Users/Dieze/Downloads/118281-V11/**)",
+      "Bash(pip show requests beautifulsoup4)",
+      "Bash(pip install beautifulsoup4 lxml)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Dieze\\Downloads\\118281-V11"
