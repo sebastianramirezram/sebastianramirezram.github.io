@@ -531,45 +531,6 @@ main {
   vertical-align: -1px;
 }
 
-/* ── RESEARCH AGENDA BLOCK ── */
-.agenda-block {
-  border-left: 2px solid var(--coral);
-  padding: 0.2rem 0 0.2rem 1.7rem;
-  margin-bottom: 3.6rem;
-}
-.agenda-block p + p { margin-top: 0.9rem; }
-.agenda-label {
-  display: block;
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--coral);
-  margin-bottom: 0.9rem;
-}
-.agenda-block p {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-style: italic;
-  font-weight: 500;
-  color: var(--text);
-  line-height: 1.5;
-  max-width: 64ch;
-}
-.agenda-block p:first-of-type::before {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M9,1 Q10,8 9,17 Q8,8 9,1 Z M1,9 Q8,10 17,9 Q8,8 1,9 Z' fill='%23d94f26'/%3E%3C/svg%3E");
-  margin-right: 8px;
-  vertical-align: -3px;
-}
-.agenda-block p:last-of-type {
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-  font-style: normal;
-  font-weight: 400;
-  color: var(--text-muted);
-}
-
 /* ── PAST-WORK LEAD-IN ── */
 .subsection-note {
   font-size: 0.9rem;
