@@ -215,6 +215,11 @@ main {
   line-height: 1.5;
   margin-bottom: 1rem;
 }
+.intro-lede::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 18 18'%3E%3Cpath d='M9,1 Q10,8 9,17 Q8,8 9,1 Z M1,9 Q8,10 17,9 Q8,8 1,9 Z' fill='%233f6b4a'/%3E%3C/svg%3E");
+  margin-right: 7px;
+  vertical-align: -2px;
+}
 .intro p {
   color: var(--text-muted);
   font-size: 0.98rem;
@@ -265,14 +270,24 @@ main {
   white-space: nowrap;
 }
 
+.section-h h2::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 18 18'%3E%3Cpath d='M9,1 Q10,8 9,17 Q8,8 9,1 Z M1,9 Q8,10 17,9 Q8,8 1,9 Z' fill='%233f6b4a'/%3E%3C/svg%3E");
+  margin-right: 8px;
+  vertical-align: -1px;
+}
+
 .section-line {
   flex: 1;
-  height: 1px;
-  background: var(--border);
+  height: 7px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='8' viewBox='0 0 24 8'%3E%3Cpath d='M0,4 C3,0.5 6,0.5 9,4 C12,7.5 15,7.5 18,4 C20,1.5 22,1.5 24,4' stroke='%23cdc2a7' stroke-width='1.3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: left center;
+  background-size: 24px 8px;
 }
 
 /* ── CARDS ── */
 .card {
+  position: relative;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -281,6 +296,15 @@ main {
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 .card:hover { border-color: var(--border-strong); box-shadow: 0 3px 14px rgba(43, 38, 32, 0.06); }
+.card::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='M2,11 Q2,2 11,2' stroke='%233f6b4a' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  position: absolute;
+  top: 8px; right: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.card:hover::after { opacity: 0.6; }
 .card h3 { font-family: var(--font-display); font-size: 1.08rem; font-weight: 500; margin-bottom: 0.3rem; }
 .card p { color: var(--text-muted); font-size: 0.92rem; }
 .card-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 0.7rem; }
@@ -352,6 +376,7 @@ main {
 
 /* ── PAPER CARDS ── */
 .paper-card {
+  position: relative;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-left: 3px solid var(--green);
@@ -361,6 +386,15 @@ main {
   transition: box-shadow 0.15s;
 }
 .paper-card:hover { box-shadow: 0 3px 14px rgba(43, 38, 32, 0.07); }
+.paper-card::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='M2,11 Q2,2 11,2' stroke='%233f6b4a' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  position: absolute;
+  top: 10px; right: 12px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.paper-card:hover::after { opacity: 0.6; }
 .paper-title   { font-family: var(--font-display); font-size: 1.12rem; font-weight: 500; margin-bottom: 0.4rem; line-height: 1.4; }
 .paper-authors { color: var(--text-muted); font-size: 0.87rem; margin-bottom: 0.4rem; }
 .paper-abstract{ color: var(--text-muted); font-size: 0.92rem; line-height: 1.65; }
@@ -476,6 +510,11 @@ main {
   margin-bottom: 0.65rem;
   line-height: 1.4;
 }
+.paper-question::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 18 18'%3E%3Cpath d='M9,1 Q10,8 9,17 Q8,8 9,1 Z M1,9 Q8,10 17,9 Q8,8 1,9 Z' fill='%233f6b4a'/%3E%3C/svg%3E");
+  margin-right: 6px;
+  vertical-align: -1px;
+}
 
 /* ── RESEARCH AGENDA BLOCK ── */
 .agenda-block {
@@ -501,6 +540,11 @@ main {
   color: var(--text);
   line-height: 1.55;
   max-width: 66ch;
+}
+.agenda-block p:first-of-type::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 18 18'%3E%3Cpath d='M9,1 Q10,8 9,17 Q8,8 9,1 Z M1,9 Q8,10 17,9 Q8,8 1,9 Z' fill='%233f6b4a'/%3E%3C/svg%3E");
+  margin-right: 7px;
+  vertical-align: -2px;
 }
 .agenda-block p:last-of-type {
   font-family: var(--font-sans);
@@ -726,7 +770,10 @@ footer span { color: var(--text-muted); }
   color: var(--text-dim);
   font-size: 0.82rem;
 }
-.thinking-line::before { content: 'Currently thinking about '; font-style: normal; }
+.thinking-line::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 18 18'%3E%3Cpath d='M9,1 Q10,8 9,17 Q8,8 9,1 Z M1,9 Q8,10 17,9 Q8,8 1,9 Z' fill='%23948c78'/%3E%3C/svg%3E") ' Currently thinking about ';
+  font-style: normal;
+}
 
 /* ── 404 ── */
 .error-hero {
