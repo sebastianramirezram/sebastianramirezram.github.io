@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hobbies | Diego Ramírez</title>
   <meta name="description" content="The human side of Diego Ramírez — hobbies, interests, and life outside the academy.">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta property="og:title" content="Hobbies | Diego Ramírez">
   <meta property="og:description" content="The human side of Diego Ramírez — hobbies, interests, and life outside the academy.">
-  <meta property="og:url" content="https://diegoramirezr.github.io/hobbies.html">
-  <meta property="og:image" content="https://diegoramirezr.github.io/WhatsApp%20Image%202026-01-15%20at%2011.03.17.jpeg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sebastianramirezram.github.io/hobbies.html">
+  <meta property="og:image" content="https://sebastianramirezram.github.io/boston-blizzard.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -23,7 +23,7 @@
     <li><a href="research.html">research</a></li>
     <li><a href="teaching.html">teaching</a></li>
     <li><a href="hobbies.html" class="active">hobbies</a></li>
-    <li><a href="amelia.html">amelia</a></li>
+    <li><a href="amelia.html" class="nav-secret" aria-label="Amelia">🐾</a></li>
   </ul>
 </nav>
 
@@ -32,7 +32,7 @@
   <!-- PHOTO BANNER — Boston winter -->
   <div class="photo-section">
     <img
-      src="WhatsApp%20Image%202026-02-22%20at%2019.07.33.jpeg"
+      src="boston-blizzard.jpg"
       alt="Diego surviving a Boston blizzard"
       class="photo-full"
     >
@@ -76,7 +76,7 @@
       <span class="hobby-icon">☕</span>
       <h3>// coffee</h3>
       <p>
-        Colombian by birth, PhD candidate by choice — both require industrial quantities of coffee.
+        Colombian by birth, PhD student by choice — both require industrial quantities of coffee.
         From a <em>tinto</em> on a Bogotá street to a cortado in a Boston café, coffee is ritual, fuel,
         and the only reason 8am regressions are survivable.
       </p>
@@ -193,37 +193,37 @@
   <div class="hobby-gallery">
 
     <div class="hobby-photo-wrap tall">
-      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(10).jpeg" alt="Art installation" class="hobby-photo-img">
+      <img src="photo-art.jpg" alt="Art installation" class="hobby-photo-img">
       <div class="hobby-photo-cap">somewhere between a museum and a fever dream</div>
     </div>
 
     <div class="hobby-photo-wrap">
-      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(1).jpeg" alt="Airplane view of coastal city" class="hobby-photo-img">
+      <img src="photo-coastal.jpg" alt="Airplane view of coastal city" class="hobby-photo-img">
       <div class="hobby-photo-cap">window seat always</div>
     </div>
 
     <div class="hobby-photo-wrap">
-      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51.jpeg" alt="Aerial view of ships at sunset" class="hobby-photo-img">
+      <img src="photo-sunset-ships.jpg" alt="Aerial view of ships at sunset" class="hobby-photo-img">
       <div class="hobby-photo-cap">ships at dusk — a natural panel dataset</div>
     </div>
 
     <div class="hobby-photo-wrap">
-      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(8).jpeg" alt="Diego on rocky New England shore" class="hobby-photo-img">
+      <img src="photo-rocky-shore.jpg" alt="Diego on rocky New England shore" class="hobby-photo-img">
       <div class="hobby-photo-cap">exploring the New England coastline</div>
     </div>
 
     <div class="hobby-photo-wrap">
-      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(9).jpeg" alt="Lighthouse on rocky pier" class="hobby-photo-img">
+      <img src="photo-lighthouse.jpg" alt="Lighthouse on rocky pier" class="hobby-photo-img">
       <div class="hobby-photo-cap">a lighthouse is just a tall regression discontinuity</div>
     </div>
 
     <div class="hobby-photo-wrap">
-      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(7).jpeg" alt="Butterfly museum exhibit" class="hobby-photo-img">
+      <img src="photo-butterfly.jpg" alt="Butterfly museum exhibit" class="hobby-photo-img">
       <div class="hobby-photo-cap">butterfly exhibit — peak nerd activity</div>
     </div>
 
     <div class="hobby-photo-wrap wide">
-      <img src="WhatsApp%20Image%202026-02-28%20at%2000.20.51%20(6).jpeg" alt="The Divine nightclub" class="hobby-photo-img">
+      <img src="photo-divine.jpg" alt="The Divine nightclub" class="hobby-photo-img">
       <div class="hobby-photo-cap">The Divine — where the Stata can wait</div>
     </div>
 
@@ -232,10 +232,25 @@
 </main>
 
 <footer>
-  <span>Diego Sebastián Ramírez Ramírez</span> &nbsp;·&nbsp; Ph.D. Candidate in Public Policy &nbsp;·&nbsp; Northeastern University &nbsp;·&nbsp; Boston, MA
+  <span>Diego Sebastián Ramírez Ramírez</span> &nbsp;·&nbsp; PhD student in Public Policy &nbsp;·&nbsp; Northeastern University &nbsp;·&nbsp; Boston, MA
   <span class="thinking-line" data-thinking></span>
 </footer>
 
+<script>
+  fetch('https://gyzdyseccvxugfujalqs.supabase.co/rest/v1/page_views', {
+    method: 'POST',
+    headers: {
+      'apikey': 'sb_publishable_craMqAF_LuUVH7ZFzMwBlA_0O2LuQ2U',
+      'Authorization': 'Bearer sb_publishable_craMqAF_LuUVH7ZFzMwBlA_0O2LuQ2U',
+      'Content-Type': 'application/json',
+      'Prefer': 'return=minimal'
+    },
+    body: JSON.stringify({
+      page: window.location.pathname || '/hobbies.html',
+      referrer: document.referrer || null
+    })
+  });
+</script>
 <script src="script.js"></script>
 </body>
 </html>

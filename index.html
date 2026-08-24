@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diego Ramírez | PhD Candidate</title>
-  <meta name="description" content="Diego Sebastián Ramírez Ramírez — PhD Candidate in Public Policy at Northeastern University. Behavioral, Development, and Gender Economics.">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Diego Ramírez | PhD Student</title>
+  <meta name="description" content="Diego Sebastián Ramírez Ramírez — PhD student in Public Policy at Northeastern University. Behavioral, Development, and Gender Economics.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diego Ramírez | PhD Student in Public Policy">
+  <meta property="og:description" content="PhD student at Northeastern University working at the intersection of behavioral, development, and gender economics.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Diego Ramírez | PhD Candidate">
-  <meta property="og:description" content="PhD Candidate in Public Policy at Northeastern University. Behavioral, Development, and Gender Economics.">
-  <meta property="og:url" content="https://diegoramirezr.github.io/">
-  <meta property="og:image" content="https://diegoramirezr.github.io/WhatsApp%20Image%202026-01-15%20at%2011.03.17.jpeg">
+  <meta property="og:url" content="https://sebastianramirezram.github.io/">
+  <meta property="og:image" content="https://sebastianramirezram.github.io/headshot.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -23,7 +25,7 @@
     <li><a href="research.html">research</a></li>
     <li><a href="teaching.html">teaching</a></li>
     <li><a href="hobbies.html">hobbies</a></li>
-    <li><a href="amelia.html">amelia</a></li>
+    <li><a href="amelia.html" class="nav-secret" aria-label="Amelia">🐾</a></li>
   </ul>
 </nav>
 
@@ -32,13 +34,13 @@
   <!-- HERO -->
   <section class="hero">
     <img
-      src="WhatsApp%20Image%202026-01-15%20at%2011.03.17.jpeg"
+      src="headshot.jpg"
       alt="Diego Ramírez"
       class="hero-photo"
     >
     <div class="hero-text">
       <h1>Diego Sebastián <span class="ac-green">Ramírez Ramírez</span></h1>
-      <p class="hero-title">Ph.D. Candidate in Public Policy</p>
+      <p class="hero-title">PhD student in Public Policy</p>
       <p class="hero-institution">Northeastern University &middot; Boston, MA</p>
       <div class="badge-row">
         <span class="tag tag-blue">Development Econ</span>
@@ -49,7 +51,7 @@
       <div class="hero-actions">
         <a href="mailto:diezebram@gmail.com" class="btn btn-primary">✉ Contact me</a>
         <a href="research.html" class="btn btn-outline">View Research →</a>
-        <a href="cv.pdf" class="btn btn-outline" target="_blank" rel="noopener">↓ Download CV</a>
+        <a href="cv.pdf" class="btn btn-cv" download>⬇ CV</a>
       </div>
     </div>
   </section>
@@ -64,7 +66,7 @@
     </div>
     <div class="terminal-body">
       <div><span class="prompt">$</span> <span class="cmd">cat bio.txt</span></div>
-      <span class="out">PhD candidate at Northeastern University, originally from Monterrey, Casanare, Colombia.</span>
+      <span class="out">PhD student at Northeastern University, originally from Monterrey, Casanare, Colombia.</span>
       <span class="out">Most of my projects circle the same question: what happens to a decision when time,</span>
       <span class="out">attention, or options run short — and where, exactly, can policy step in?</span>
       <span class="out">Previously: World Bank, IDB, Princeton, and Universidad del Rosario.</span>
@@ -180,19 +182,30 @@
       <span class="ac-green" style="font-family: var(--font-mono); width: 1.2rem;">📍</span>
       <span style="color: var(--text-muted); font-size: 0.88rem;">Northeastern University, Boston, MA, USA</span>
     </div>
-    <div class="contact-item">
-      <span class="ac-green" style="font-family: var(--font-mono); width: 1.2rem;">☎</span>
-      <span style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.85rem;">+1 (202) 373-2047</span>
-    </div>
   </div>
 
 </main>
 
 <footer>
-  <span>Diego Sebastián Ramírez Ramírez</span> &nbsp;·&nbsp; Ph.D. Candidate in Public Policy &nbsp;·&nbsp; Northeastern University &nbsp;·&nbsp; Boston, MA
+  <span>Diego Sebastián Ramírez Ramírez</span> &nbsp;·&nbsp; PhD Student in Public Policy &nbsp;·&nbsp; Northeastern University &nbsp;·&nbsp; Boston, MA
   <span class="thinking-line" data-thinking></span>
 </footer>
 
+<script>
+  fetch('https://gyzdyseccvxugfujalqs.supabase.co/rest/v1/page_views', {
+    method: 'POST',
+    headers: {
+      'apikey': 'sb_publishable_craMqAF_LuUVH7ZFzMwBlA_0O2LuQ2U',
+      'Authorization': 'Bearer sb_publishable_craMqAF_LuUVH7ZFzMwBlA_0O2LuQ2U',
+      'Content-Type': 'application/json',
+      'Prefer': 'return=minimal'
+    },
+    body: JSON.stringify({
+      page: window.location.pathname || '/',
+      referrer: document.referrer || null
+    })
+  });
+</script>
 <script src="script.js"></script>
 </body>
 </html>

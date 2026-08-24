@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teaching | Diego Ramírez</title>
-  <meta name="description" content="Teaching experience and academic training of Diego Ramírez, PhD Candidate at Northeastern University.">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Teaching experience and academic training of Diego Ramírez, PhD student at Northeastern University.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta property="og:title" content="Teaching | Diego Ramírez">
-  <meta property="og:description" content="Teaching experience and academic training — Northeastern University.">
-  <meta property="og:url" content="https://diegoramirezr.github.io/teaching.html">
-  <meta property="og:image" content="https://diegoramirezr.github.io/WhatsApp%20Image%202026-01-15%20at%2011.03.17.jpeg">
+  <meta property="og:description" content="Teaching experience of Diego Ramírez, PhD student in Public Policy at Northeastern University.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sebastianramirezram.github.io/teaching.html">
+  <meta property="og:image" content="https://sebastianramirezram.github.io/headshot.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -23,7 +23,7 @@
     <li><a href="research.html">research</a></li>
     <li><a href="teaching.html" class="active">teaching</a></li>
     <li><a href="hobbies.html">hobbies</a></li>
-    <li><a href="amelia.html">amelia</a></li>
+    <li><a href="amelia.html" class="nav-secret" aria-label="Amelia">🐾</a></li>
   </ul>
 </nav>
 
@@ -38,11 +38,7 @@
       <span class="terminal-filename">teaching.sh</span>
     </div>
     <div class="terminal-body">
-      <div><span class="prompt">$</span> <span class="cmd">cat teaching_philosophy.txt</span></div>
-      <span class="out">Teaching economics means making abstract models concrete.</span>
-      <span class="out">Good pedagogy is about asking the right questions, not just giving right answers.</span>
-      <span class="out">My background in psychology shapes how I think about student learning.</span>
-      <div class="mt-1"><span class="prompt">$</span> <span class="cmd">ls courses_taught/</span></div>
+      <div><span class="prompt">$</span> <span class="cmd">ls courses_taught/</span></div>
       <span class="out">statistical_analysis/&nbsp;&nbsp; economics_for_public_policy/&nbsp;&nbsp; economic_analysis_tools/&nbsp;&nbsp; intro_to_economics/&nbsp;&nbsp; experimental_psychology/</span>
       <div class="mt-half"><span class="prompt">$</span> <span class="cursor"></span></div>
     </div>
@@ -237,10 +233,25 @@
 </main>
 
 <footer>
-  <span>Diego Sebastián Ramírez Ramírez</span> &nbsp;·&nbsp; Ph.D. Candidate in Public Policy &nbsp;·&nbsp; Northeastern University &nbsp;·&nbsp; Boston, MA
+  <span>Diego Sebastián Ramírez Ramírez</span> &nbsp;·&nbsp; PhD student in Public Policy &nbsp;·&nbsp; Northeastern University &nbsp;·&nbsp; Boston, MA
   <span class="thinking-line" data-thinking></span>
 </footer>
 
+<script>
+  fetch('https://gyzdyseccvxugfujalqs.supabase.co/rest/v1/page_views', {
+    method: 'POST',
+    headers: {
+      'apikey': 'sb_publishable_craMqAF_LuUVH7ZFzMwBlA_0O2LuQ2U',
+      'Authorization': 'Bearer sb_publishable_craMqAF_LuUVH7ZFzMwBlA_0O2LuQ2U',
+      'Content-Type': 'application/json',
+      'Prefer': 'return=minimal'
+    },
+    body: JSON.stringify({
+      page: window.location.pathname || '/teaching.html',
+      referrer: document.referrer || null
+    })
+  });
+</script>
 <script src="script.js"></script>
 </body>
 </html>
