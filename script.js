@@ -12,7 +12,29 @@ const CURRENTLY_THINKING_ABOUT = [
 
 document.addEventListener("DOMContentLoaded", () => {
   const el = document.querySelector("[data-thinking]");
-  if (!el) return;
-  const pick = CURRENTLY_THINKING_ABOUT[Math.floor(Math.random() * CURRENTLY_THINKING_ABOUT.length)];
-  el.textContent = pick;
+  if (el) {
+    const pick = CURRENTLY_THINKING_ABOUT[Math.floor(Math.random() * CURRENTLY_THINKING_ABOUT.length)];
+    el.textContent = pick;
+  }
+
+  // Quiet scroll-reveal for the larger editorial blocks only — not every
+  // small card, so it reads as composition, not a wall of motion.
+  const revealTargets = document.querySelectorAll(
+    ".section-h, .paper-card, .photo-section, .amelia-hero, .amelia-section, .amelia-reveal"
+  );
+  if (revealTargets.length && "IntersectionObserver" in window) {
+    revealTargets.forEach((t) => t.classList.add("reveal"));
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
+    );
+    revealTargets.forEach((t) => io.observe(t));
+  }
 });
