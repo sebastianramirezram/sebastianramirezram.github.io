@@ -19,12 +19,12 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-brand">diegoramirez</a>
+  <a href="index.html" class="nav-brand">Diego Ramírez</a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">profile</a></li>
-    <li><a href="research.html">research</a></li>
-    <li><a href="teaching.html">teaching</a></li>
-    <li><a href="hobbies.html">hobbies</a></li>
+    <li><a href="index.html" class="active">Profile</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
     <li><a href="amelia.html" class="nav-secret" aria-label="Amelia">🐾</a></li>
   </ul>
 </nav>
@@ -49,39 +49,31 @@
         <span class="tag tag-yellow">Education Econ</span>
       </div>
       <div class="hero-actions">
-        <a href="mailto:diezebram@gmail.com" class="btn btn-primary">✉ Contact me</a>
+        <a href="mailto:diezebram@gmail.com" class="btn btn-primary">Contact me</a>
         <a href="research.html" class="btn btn-outline">View Research →</a>
-        <a href="cv.pdf" class="btn btn-cv" download>⬇ CV</a>
+        <a href="cv.pdf" class="btn btn-cv" download>Download CV</a>
       </div>
     </div>
   </section>
 
-  <!-- TERMINAL BIO -->
-  <div class="terminal">
-    <div class="terminal-bar">
-      <span class="dot dot-red"></span>
-      <span class="dot dot-yellow"></span>
-      <span class="dot dot-green"></span>
-      <span class="terminal-filename">about.sh</span>
-    </div>
-    <div class="terminal-body">
-      <div><span class="prompt">$</span> <span class="cmd">cat bio.txt</span></div>
-      <span class="out">PhD student at Northeastern University, originally from Monterrey, Casanare, Colombia.</span>
-      <span class="out">Most of my projects circle the same question: what happens to a decision when time,</span>
-      <span class="out">attention, or options run short — and where, exactly, can policy step in?</span>
-      <span class="out">Previously: World Bank, IDB, Princeton, and Universidad del Rosario.</span>
-      <div class="mt-1"><span class="prompt">$</span> <span class="cmd">cat research_questions.txt</span></div>
-      <span class="out"><span class="out-arr">→</span> Does a tired mind follow rules more strictly, or less?</span>
-      <span class="out"><span class="out-arr">→</span> Can a summer job at 16 change whether someone is convicted of a violent crime at 30?</span>
-      <span class="out"><span class="out-arr">→</span> What would it take for childcare to stop being a labor-market constraint?</span>
-      <span class="out"><span class="out-arr">→</span> Where do feminist and queer perspectives change the economic story being told?</span>
-      <div class="mt-1"><span class="prompt">$</span> <span class="cursor"></span></div>
+  <!-- INTRO -->
+  <div class="intro">
+    <p class="intro-lede">Most of my projects circle the same question: what happens to a decision when time, attention, or options run short — and where, exactly, can policy step in?</p>
+    <p>PhD student at Northeastern University, originally from Monterrey, Casanare, Colombia.</p>
+    <p>Previously: World Bank, IDB, Princeton, and Universidad del Rosario.</p>
+
+    <span class="questions-label">Questions I keep returning to</span>
+    <div class="questions-list">
+      <p class="question-item">Does a tired mind follow rules more strictly, or less?</p>
+      <p class="question-item">Can a summer job at 16 change whether someone is convicted of a violent crime at 30?</p>
+      <p class="question-item">What would it take for childcare to stop being a labor-market constraint?</p>
+      <p class="question-item">Where do feminist and queer perspectives change the economic story being told?</p>
     </div>
   </div>
 
   <!-- EDUCATION -->
   <div class="section-h">
-    <h2>education</h2>
+    <h2>Education</h2>
     <div class="section-line"></div>
   </div>
 
@@ -133,13 +125,13 @@
 
   <!-- SKILLS -->
   <div class="section-h">
-    <h2>skills</h2>
+    <h2>Skills</h2>
     <div class="section-line"></div>
   </div>
 
   <div class="skills-grid">
     <div class="card">
-      <p class="comment" style="font-family: var(--font-mono); font-size: 0.78rem; margin-bottom: 0.6rem;">// programming languages</p>
+      <span class="skills-label">Programming languages</span>
       <div class="skill-row"><span class="skill-name">Stata</span><span class="skill-level">daily driver</span></div>
       <div class="skill-row"><span class="skill-name">R</span><span class="skill-level">daily driver</span></div>
       <div class="skill-row"><span class="skill-name">Python</span><span class="skill-level">daily driver</span></div>
@@ -148,7 +140,7 @@
     </div>
 
     <div class="card">
-      <p class="comment" style="font-family: var(--font-mono); font-size: 0.78rem; margin-bottom: 0.6rem;">// human languages</p>
+      <span class="skills-label">Human languages</span>
       <div class="skill-row"><span class="skill-name">Spanish</span><span class="skill-level">native</span></div>
       <div class="skill-row"><span class="skill-name">English</span><span class="skill-level">fluent</span></div>
       <div class="skill-row"><span class="skill-name">Italian</span><span class="skill-level">intermediate</span></div>
@@ -156,7 +148,7 @@
   </div>
 
   <div class="card" style="margin-top: 0.8rem;">
-    <p class="comment" style="font-family: var(--font-mono); font-size: 0.78rem; margin-bottom: 0.8rem;">// research tools</p>
+    <span class="skills-label" style="margin-bottom: 0.6rem;">Research tools</span>
     <div class="tools-wrap">
       <span class="tag tag-blue">oTree</span>
       <span class="tag tag-blue">Pupil</span>
@@ -169,18 +161,18 @@
 
   <!-- CONTACT -->
   <div class="section-h">
-    <h2>contact</h2>
+    <h2>Contact</h2>
     <div class="section-line"></div>
   </div>
 
   <div class="card" style="display: flex; flex-direction: column; gap: 0.9rem;">
     <div class="contact-item">
-      <span class="ac-green" style="font-family: var(--font-mono); width: 1.2rem;">✉</span>
+      <span class="ac-green">✉</span>
       <a href="mailto:diezebram@gmail.com">diezebram@gmail.com</a>
     </div>
     <div class="contact-item">
-      <span class="ac-green" style="font-family: var(--font-mono); width: 1.2rem;">📍</span>
-      <span style="color: var(--text-muted); font-size: 0.88rem;">Northeastern University, Boston, MA, USA</span>
+      <span class="ac-green">📍</span>
+      <span style="color: var(--text-muted); font-size: 0.9rem;">Northeastern University, Boston, MA, USA</span>
     </div>
   </div>
 

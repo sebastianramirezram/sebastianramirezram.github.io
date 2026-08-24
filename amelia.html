@@ -14,19 +14,9 @@
   <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Amelia-specific overrides — warmer purple palette */
-    .nav-links a.active {
-      color: var(--purple);
-      border-color: rgba(210, 168, 255, 0.35);
-      background: rgba(210, 168, 255, 0.08);
-    }
-    .nav-links a:hover {
-      color: var(--purple);
-      border-color: rgba(210, 168, 255, 0.35);
-      background: rgba(210, 168, 255, 0.08);
-    }
-    .timeline-item::before { background: var(--purple); box-shadow: 0 0 0 2px rgba(210, 168, 255, 0.3); }
-    .timeline::before { background: linear-gradient(to bottom, var(--purple), transparent); }
+    /* Amelia-specific overrides — warmer plum accent */
+    .timeline-item::before { background: var(--plum); }
+    .timeline::before { background: var(--plum); opacity: 0.4; }
     .amelia-gallery {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -37,7 +27,7 @@
       position: relative;
       border-radius: var(--radius);
       overflow: hidden;
-      border: 1px solid rgba(210, 168, 255, 0.25);
+      border: 1px solid rgba(107, 74, 104, 0.25);
       aspect-ratio: 3/4;
     }
     .amelia-photo-wrap:hover .amelia-photo-caption { opacity: 1; }
@@ -51,18 +41,18 @@
     .amelia-photo-wrap:hover .amelia-photo-img { transform: scale(1.03); }
     .amelia-photo-caption {
       position: absolute; bottom: 0; left: 0; right: 0;
-      background: linear-gradient(transparent, rgba(13,17,23,0.85));
+      background: linear-gradient(transparent, rgba(20,17,12,0.82));
       padding: 1.5rem 0.8rem 0.7rem;
-      font-family: var(--font-mono); font-size: 0.72rem;
-      color: var(--purple);
+      font-family: var(--font-display); font-style: italic; font-size: 0.8rem;
+      color: #f0ece2;
       opacity: 0;
       transition: opacity 0.2s;
     }
     @media (max-width: 600px) { .amelia-gallery { grid-template-columns: 1fr 1fr; } }
     .heart-divider {
       text-align: center;
-      font-size: 1.2rem;
-      color: rgba(210, 168, 255, 0.5);
+      font-size: 1.1rem;
+      color: rgba(107, 74, 104, 0.45);
       letter-spacing: 0.5rem;
       margin: 2rem 0;
     }
@@ -71,7 +61,7 @@
       position: absolute;
       top: 0; right: 0;
       font-size: 1rem;
-      color: rgba(210, 168, 255, 0.15);
+      color: rgba(107, 74, 104, 0.18);
       pointer-events: none;
       line-height: 1.6;
       text-align: right;
@@ -82,12 +72,12 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-brand">diegoramirez</a>
+  <a href="index.html" class="nav-brand">Diego Ramírez</a>
   <ul class="nav-links">
-    <li><a href="index.html">profile</a></li>
-    <li><a href="research.html">research</a></li>
-    <li><a href="teaching.html">teaching</a></li>
-    <li><a href="hobbies.html">hobbies</a></li>
+    <li><a href="index.html">Profile</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
     <li><a href="amelia.html" class="active nav-secret" aria-label="Amelia">🐾</a></li>
   </ul>
 </nav>
@@ -95,23 +85,9 @@
 <main>
 
   <!-- CURIOSITY INTRO -->
-  <div class="terminal" style="border-color: rgba(210, 168, 255, 0.3); margin-bottom: 2rem;">
-    <div class="terminal-bar">
-      <span class="dot dot-red"></span>
-      <span class="dot dot-yellow"></span>
-      <span class="dot" style="background: var(--purple);"></span>
-      <span class="terminal-filename">you_found_it.sh</span>
-    </div>
-    <div class="terminal-body">
-      <div><span class="prompt" style="color: var(--purple);">$</span> <span class="cmd">whoami --curiosity</span></div>
-      <span class="out">You clicked the 🐾.</span>
-      <span class="out">No label. No explanation. Just a paw print in the nav bar.</span>
-      <span class="out">And yet — here you are.</span>
-      <div class="mt-1"><span class="prompt" style="color: var(--purple);">$</span> <span class="cmd">echo "curiosity is a good sign"</span></div>
-      <span class="out" style="color: var(--purple);">curiosity is a good sign</span>
-      <span class="out" style="color: var(--text-dim); font-size: 0.8rem;"># it means you read carefully. welcome to the best part of this site.</span>
-      <div class="mt-half"><span class="prompt" style="color: var(--purple);">$</span> <span class="cursor" style="background: var(--purple);"></span></div>
-    </div>
+  <div class="amelia-reveal">
+    <p>You clicked the 🐾.</p>
+    <p>No label, no explanation — just a paw print in the nav bar. Curiosity is a good sign. It means you read carefully. Welcome to the best part of this site.</p>
   </div>
 
   <!-- AMELIA HERO -->
@@ -125,27 +101,27 @@
 
     <div class="amelia-facts-grid">
       <div class="fact-box">
-        <span class="fact-label">// species</span>
+        <span class="fact-label">Species</span>
         <span class="fact-value">Felis catus</span>
       </div>
       <div class="fact-box">
-        <span class="fact-label">// role</span>
+        <span class="fact-label">Role</span>
         <span class="fact-value">PhD moral support</span>
       </div>
       <div class="fact-box">
-        <span class="fact-label">// specialty</span>
+        <span class="fact-label">Specialty</span>
         <span class="fact-value">sitting on papers</span>
       </div>
       <div class="fact-box">
-        <span class="fact-label">// research hours</span>
+        <span class="fact-label">Research hours</span>
         <span class="fact-value">0 (supervised)</span>
       </div>
       <div class="fact-box">
-        <span class="fact-label">// publications</span>
+        <span class="fact-label">Publications</span>
         <span class="fact-value">0 (cited in vibes)</span>
       </div>
       <div class="fact-box">
-        <span class="fact-label">// location</span>
+        <span class="fact-label">Location</span>
         <span class="fact-value">wherever it's warm</span>
       </div>
     </div>
@@ -155,35 +131,26 @@
 
   <!-- ABOUT AMELIA -->
   <div class="section-h">
-    <h2>about_amelia</h2>
+    <h2>About Amelia</h2>
     <div class="section-line"></div>
   </div>
 
-  <div class="terminal" style="border-color: rgba(210, 168, 255, 0.3);">
-    <div class="terminal-bar">
-      <span class="dot dot-red"></span>
-      <span class="dot dot-yellow"></span>
-      <span class="dot" style="background: var(--purple);"></span>
-      <span class="terminal-filename">amelia.sh</span>
-    </div>
-    <div class="terminal-body">
-      <div><span class="prompt" style="color: var(--purple);">$</span> <span class="cmd">cat amelia_bio.txt</span></div>
-      <span class="out">Meet Amelia — the real reason any of this work gets done.</span>
-      <span class="out">She provides critical emotional support during econometrics deadlines,</span>
-      <span class="out">unsolicited opinions on research proposals (mostly meows),</span>
-      <span class="out">and an uncanny ability to sit exactly on the keyboard when it matters most.</span>
-      <div class="mt-1"><span class="prompt" style="color: var(--purple);">$</span> <span class="cmd">cat skills.txt</span></div>
-      <span class="out"><span style="color: var(--purple);">→</span> Napping on Stata do-files (advanced)</span>
-      <span class="out"><span style="color: var(--purple);">→</span> Peer review via pawing (intermediate)</span>
-      <span class="out"><span style="color: var(--purple);">→</span> 3am productivity disruption (expert)</span>
-      <span class="out"><span style="color: var(--purple);">→</span> Making any zoom call better (innate)</span>
-      <div class="mt-half"><span class="prompt" style="color: var(--purple);">$</span> <span class="cursor" style="background: var(--purple);"></span></div>
+  <div class="intro">
+    <p class="intro-lede">Meet Amelia — the real reason any of this work gets done.</p>
+    <p>She provides critical emotional support during econometrics deadlines, unsolicited opinions on research proposals (mostly meows), and an uncanny ability to sit exactly on the keyboard when it matters most.</p>
+
+    <span class="questions-label">Core competencies</span>
+    <div class="questions-list">
+      <p class="question-item">Napping on Stata do-files (advanced)</p>
+      <p class="question-item">Peer review via pawing (intermediate)</p>
+      <p class="question-item">3am productivity disruption (expert)</p>
+      <p class="question-item">Making any Zoom call better (innate)</p>
     </div>
   </div>
 
   <!-- AMELIA'S SECTIONS -->
   <div class="amelia-section">
-    <h3>research_contributions</h3>
+    <h3>Research contributions</h3>
     <p>
       While Amelia's name does not appear on any working paper (yet), her contributions to the research process
       are immeasurable. She has reviewed multiple drafts of literature reviews through the act of sitting on them,
@@ -193,7 +160,7 @@
   </div>
 
   <div class="amelia-section">
-    <h3>teaching_philosophy</h3>
+    <h3>Teaching philosophy</h3>
     <p>
       Amelia believes in learning through observation and strategic napping. Her approach to education is
       entirely Socratic: she asks no questions, provides no answers, and evaluates all outcomes with equal
@@ -203,7 +170,7 @@
   </div>
 
   <div class="amelia-section">
-    <h3>boston_survival_guide</h3>
+    <h3>Boston survival guide</h3>
     <p>
       Unlike certain PhD students who still haven't fully adapted to Boston winters,
       Amelia has mastered the art of indoor living. Her strategy: find the warmest spot in the apartment,
@@ -214,7 +181,7 @@
 
   <!-- GALLERY -->
   <div class="section-h">
-    <h2>gallery</h2>
+    <h2>Gallery</h2>
     <div class="section-line"></div>
   </div>
 
@@ -250,7 +217,6 @@
 <footer>
   <span>Made with love for Amelia</span> &nbsp;·&nbsp; Diego Sebastián Ramírez Ramírez &nbsp;·&nbsp; Northeastern University
 </footer>
-
 
 <script>
   fetch('https://gyzdyseccvxugfujalqs.supabase.co/rest/v1/page_views', {
